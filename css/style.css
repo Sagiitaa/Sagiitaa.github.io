@@ -1,0 +1,241 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+/* Style the body */
+body {
+    background-color: #baceeb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Common styles for .about, .skills, .education, .experience, .work, and .contact */
+.about, .skills, .education, .experience, .work, .contact {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styles */
+header {
+    background-color: #669bbf;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    text-align: center;
+    background-color: #669bbf;
+    padding: 25px 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav li {
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+nav li:hover a {
+    text-decoration: underline;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    nav ul {
+        flex-wrap: wrap;
+    }
+    nav li {
+        margin: 5px 0;
+    }
+    nav a {
+        padding: 5px 10px;
+    }
+}
+
+/* Banner styles */
+.banner {
+    background-color: rgb(192, 216, 243);
+    height: 600px;
+    text-align: center;
+    padding: 30px;
+    color: rgb(43, 42, 42);
+}
+
+.banner img {
+    border-radius: 150px;
+    height: 200px;
+    border: 6px solid white;
+    margin-top: 50px;
+}
+
+.banner h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner button {
+    margin-top: 35px;
+    padding: 15px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+}
+
+.banner button:hover {
+    background-color: rgb(113, 170, 231);
+    border: 2px solid white;
+    color: white;
+}
+
+h1 span::before {
+    content: '';
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50%);
+    color: rgb(64, 103, 222);
+    font-size: 40px;
+}
+
+@keyframes gerak {
+    0% {
+        content: 'Welcome';
+    }
+    50% {
+        content: 'To The Blog Of Dewi Putri sagita Suhendra';
+    }
+    100% {
+        content: 'Thank you';
+    }
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .banner {
+        height: auto; /* Allow the banner's height to adjust dynamically */
+    }
+
+    .banner img {
+        margin-top: 20px; /* Adjust the margin for smaller screens */
+    }
+
+    .banner h1 {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+    }
+
+    .banner button {
+        width: 80%; /* Adjust the button width for smaller screens */
+    }
+}
+
+
+/* Main content styles */
+main {
+    padding: 30px;
+    margin-top: 8px; /* Sesuaikan dengan tinggi header Anda */
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Add some spacing between Skills and Experience sections */
+.skills + .experience {
+    margin-top: 30px;
+}
+
+/* Experience, Education, Work, and Contact styles */
+.experience, .education, .work, .contact {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.experience h2, .education h2, .work h2, .contact h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.experience-item-title, .education-title, .work-title, .contact-info {
+    font-size: 18px;
+}
+
+.experience-list, .skills-list, .education-item, .work-item {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li, .education-school, .experience-description, .work-company, .work-year, .work-description, .contact-info {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Experience styles */
+.experience-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.experience-column {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.experience-title {
+    font-size: 20px;
+}
+
+.experience-description {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
